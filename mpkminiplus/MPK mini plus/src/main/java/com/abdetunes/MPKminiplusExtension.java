@@ -21,6 +21,9 @@ public class MPKminiplusExtension extends ControllerExtension
 
       mTransport = host.createTransport();
       host.getMidiInPort(0).setMidiCallback((ShortMidiMessageReceivedCallback)msg -> onMidi0(msg));
+
+      host.getMidiInPort(0).createNoteInput("Notes");
+
       host.getMidiInPort(0).setSysexCallback((String data) -> onSysex0(data));
 
       // TODO: Perform your driver initialization here.

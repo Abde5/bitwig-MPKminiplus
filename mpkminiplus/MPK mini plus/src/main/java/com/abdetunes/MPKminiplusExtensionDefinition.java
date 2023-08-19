@@ -41,7 +41,7 @@ public class MPKminiplusExtensionDefinition extends ControllerExtensionDefinitio
    @Override
    public String getHardwareVendor()
    {
-      return "AKAI";
+      return "Akai";
    }
    
    @Override
